@@ -1,0 +1,23 @@
+version: "3"
+services:
+  web:
+    container_name: "todoapi_web"
+    build:
+      context: "./docker"
+    environment:
+      - NODE_ENV=developement
+    volumes:
+      - "./:/usr/src/app"
+    ports:
+      - "3000:80"
+  db:
+    container_name: "todoapi_db"
+    image: mariadb:latest
+    volumes:
+      - ".mysql:/var/lib/mysql"
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: db
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin

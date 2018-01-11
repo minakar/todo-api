@@ -1,0 +1,7 @@
+.mysql/
+.tern-port
+docker/*
+!docker/Dockerfile
+node_modules/
+public/*
+!/public/index.html
