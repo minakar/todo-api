@@ -9,3 +9,11 @@ docker, docker-compose, node, yarn.
 - Bundle the frontend assets `yarn build`
 - Build and run the docker containers `docker-compsoe up`
 - Navigate to http://localhost:3000
+
+## API endpints 
+- `GET /api/todos` fetch all todos.
+- `POST /api/todos` create a new todo item.
+
+## TODO
+
+- [ ] Native android client [here](./android).
