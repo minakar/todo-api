@@ -20,7 +20,6 @@ const todos = handleActions(
       return state;
     },
     [actions.storeTodoSuccess](state, { payload: { todo } }) {
-      console.log(todo);
       return { ...state, items: [todo, ...state.items] };
     }
   },

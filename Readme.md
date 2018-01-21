@@ -7,7 +7,8 @@ docker, docker-compose, node, yarn.
 ## How I run it?
 - Install npm dependencies `yarn`
 - Bundle the frontend assets `yarn build`
-- Build and run the docker containers `docker-compsoe up`
+- Build and run the docker containers `docker-compose up`
+- Migrate the database `docker-compose exec web node bin/migrate.js`
 - Navigate to http://localhost:3000
 
 ## API endpints 
